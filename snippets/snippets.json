@@ -1,0 +1,167 @@
+{
+  "Autocomplete SAPUI5": {
+    "prefix": ".bindBaseAutocomplete",
+    "body": [
+      ".bindBaseAutocomplete({",
+      "  //add an array of objects, and each one should look like this:",
+      "  //{key: \"1\", name: \"one\"}, ...",
+      "  options: [],",
+      "  tooltip: \"${3:Tooltip!}\",",
+      "  required: ${4|true,false|},",
+      "  errorMsg: \"${5:Error Tooltip!!!}\",",
+      "  msgType: ${6:2},",
+      "  successMsg: \"${7:Success Tooltip!!}\"",
+      "});",
+      "${0}"
+    ],
+    "description": "Autocomplete SAPUI5"
+  },
+
+  "Input SAPUI5": {
+    "prefix": ".bindBaseInput",
+    "body": [
+      ".bindBaseInput({",
+      "  isSearchBox: ${2|true,false|},",
+      "  required: ${3|false,true|}",
+      "});",
+      "${0}"
+    ],
+    "description": "Input SAPUI5"
+  },
+  "Select SAPUI5": {
+    "prefix": ".bindBaseSelect",
+    "body": [
+      ".bindBaseSelect({",
+      "  //add an array of objects, and each one should look like this:",
+      "  //{key: \"1\", name: \"one\"}, ...",
+      "  options: [],",
+      "  icon: \"${2:addUser}\",",
+      "  iconCategory: \"${3:User}\",",
+      "  iconLeft: ${4|true,false|},",
+      "  required: ${5|true,false|},",
+      "  errorMsg: \"${6:error}\",",
+      "  msgType: ${7:2},",
+      "  tooltip: \"${8:Select Tooltip!}\",",
+      "  onChange: function (oldVal, newVal) {",
+      "    ${9:console.log(oldVal, newVal, this);}",
+      "  },",
+      "});",
+      "${0}"
+    ],
+    "description": "Select SAPUI5"
+  },
+  "MultipleSelect SAPUI5": {
+    "prefix": ".bindBaseMultipleSelect3 SAPUI5",
+    "body": [
+      ".bindBaseMultipleSelect3({",
+      "  required: ${2|true,false|},",
+      "  minChoises: ${3:2},",
+      "  maxChoises: ${4:4},",
+      "  //add an array of objects, and each one should look like this:",
+      "  //{ key: 1, name: \"ABC\", icon: \"addUser\", iconFont: \"User\" }, ...",
+      "  options: [],",
+      "  placeholder: \"${5:Select}\",",
+      "  onChange: function (newkey) {",
+      "    ${6:console.log(newkey);}",
+      "  },",
+      "});",
+      "${0}"
+    ],
+    "description": "MultipleSelect SAPUI5"
+  },
+  "DatePicker SAPUI5": {
+    "prefix": ".bindBaseDatePicker",
+    "body": [
+      ".bindBaseDatePicker({",
+      "  required: ${2|true,false|},",
+      "  tooltip: {",
+      "    class: \"dark\",",
+      "    position: \"right\",",
+      "    text: \"${3:DatePicker Tooltip!}\"",
+      "  },",
+      "  onChange: (oldVal, newVal) => {",
+      "    ${4:console.log(newVal)}",
+      "  }",
+      "});",
+      "${0}"
+    ],
+    "description": "DatePicker SAPUI5"
+  },
+  "Rangepicker SAPUI5": {
+    "prefix": ".bindBaseRangePicker",
+    "body": [
+      ".bindBaseRangePicker({",
+      "  required: ${2|true,false|},",
+      "  tooltip: {",
+      "    class: \"dark\",",
+      "    position: \"right\",",
+      "    text: \"${3:Rangepicker Tooltip!}\"",
+      "  },",
+      "  onChange: (oldVal, newVal) => {",
+      "    ${4:console.log(newVal)}",
+      "  }",
+      "});",
+      "${0}"
+    ],
+    "description": "Rangepicker SAPUI5"
+  },
+  "Checkbox SAPUI5": {
+    "prefix": ".bindBaseCheckbox",
+    "body": [
+      ".bindBaseCheckbox({",
+      "  id: ${2:1},",
+      "  text: \"${3:Example Checkbox}\",",
+      "  onChange: (old, newValue) => {",
+      "    ${4:console.log(newValue);}",
+      "  }",
+      "});",
+      "${0}"
+    ],
+    "description": "Checkbox SAPUI5"
+  },
+  "RadioButtons SAPUI5": {
+    "prefix": ".bindBaseRadioButton",
+    "body": [
+      ".bindBaseRadioButton({",
+      "  id: ${2:1},",
+      "  text: \"${3:Example Radio Button}\",",
+      "  tooltip: \"${4:example tooltip on Radiobutton}\",",
+      "  name: \"${5:hi}\",",
+      "  onChange: (old, newValue) => {",
+      "    ${6:console.log(newValue);}",
+      "  }",
+      "});",
+      "${0}"
+    ],
+    "description": "RadioButtons SAPUI5"
+  },
+
+  "Switcher SAPUI5": {
+    "prefix": ".bindBaseSwitcher",
+    "body": [
+      ".bindBaseSwitcher({",
+      "  checked: ${1|false,true|},",
+      "  disabled: ${2|false,true|},",
+      "  id: \"${3:ctrl-2}\",",
+      "  name: \"${4:ctrl-2}\",",
+      "  class: \"${5|none,accept|}\"",
+      "});",
+      "${0}"
+    ],
+    "description": "Switcher SAPUI5"
+  },
+  "TextArea SAPUI5": {
+    "prefix": ".bindBaseTextarea",
+    "body": [
+      ".bindBaseTextarea({",
+      "  required: ${1|false,true|},",
+      "  placeholder: \"${2:Fill in with text}\",",
+      "  rows: ${3:5},",
+      "  value: \"${4}\",",
+      "  tooltip: \"${5:This is a tooltip}\"",
+      "});",
+      "${0}"
+    ],
+    "description": "TextArea SAPUI5"
+  }
+}
