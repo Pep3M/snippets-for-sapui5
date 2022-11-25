@@ -1,65 +1,58 @@
-# snippets-for-sapui5 README
+# Snippets for SAP UI5 - README
 
-This is the README for your extension "snippets-for-sapui5". After writing up a brief description, we recommend including the following sections.
+Un set de snippets para que puedas crear más rápidamente tus componentes de SAP UI5.
 
-## Features
+![1669339427597](image/README/1669339427597.png)
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## ¿Cómo funciona?
 
-For example if there is an image subfolder under your extension project workspace:
+Esta herramienta está pensado para un ambiente SAP, donde básicamente los componentes visuales ya están predefinidos y tan solo necesitamos instanciarlos rápidamente.
 
-\!\[feature X\]\(images/feature-x.png\)
+```javascript
+$('#test-div').bindBaseCheckbox({
+  id: 1,
+  text: "Example Checkbox",
+  onChange: (old, newValue) => {
+    console.log(newValue);
+  }
+});
+```
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+Al empezar a escribir, por ejemplo, `.bindBaseCheckBox` nos completará los elementos principales del componente **Checkbox**, según la documentación.
 
-## Requirements
+## Snippets
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+##### Fields
 
-## Extension Settings
+* `.bindBaseAutocomplete`
+* `.bindBaseInput`
+* `.bindBaseSelect`
+* `.bindBaseMultiplSelect3`
+* `.bindBaseDatePicker`
+* `.bindBaseRangePicker`
+* `.bindBaseCheckbox`
+* `.bindBaseRadioButton`
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+##### Handlebars
 
-For example:
+* `.bindBaseSwitcher`
+* `.bindBaseTextarea`
 
-This extension contributes the following settings:
+## Releases
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+Un resumen de las mejoras aportada con cada version:
 
-## Known Issues
+### 0.0.1
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+Initial release, nothing new jeje.
 
-## Release Notes
+## ¿Tienes alguna mejora o sugerencia?
 
-Users appreciate release notes as you update your extension.
+Reporta los problemas *(Issues)* que encuentres [aqui](https://github.com/Pep3M/snippets-for-sapui5/issues "Issues"). Tambien escribe cualquier mejora o sugerencia. 
 
-### 1.0.0
+!Démosle a la comunidad una herramienta útil!
 
-Initial release of ...
+## Más información
 
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+* [Github Project](https://github.com/Pep3M/snippets-for-sapui5 "@Pep3M/snippets-for-sapui5") (don't forget this -> ⭐)
+* [Contacto](mailto:pep3.marquez@gmail.com "Email") (Pep3 Marquez)
