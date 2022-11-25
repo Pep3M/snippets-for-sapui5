@@ -3,21 +3,22 @@
   "displayName": "Snippets for SAPUI5",
   "description": "A set of snippets to speed up writing SAP UI 5 components",
   "version": "0.0.1",
+	"icon": "images/sapui5.png",
+  "publisher": "Pep3 Marquez",
+  "author": {
+		"name": "Pep3 Marquez",
+		"url": "http://github.com/Pep3M"
+	},"repository": {
+    "type": "git",
+    "url": "https://github.com/Pep3M/snippets-for-sapui5"
+  },
   "engines": {
     "vscode": "^1.73.0"
   },
   "categories": [
     "Snippets"
   ],
-  "activationEvents": [
-    "onCommand:snippets-for-sapui5.helloWorld"
-  ],
-  "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "snippets-for-sapui5.helloWorld",
-      "title": "Hello World"
-    }],
     "snippets": [
       {
         "language": "javascript",
@@ -26,8 +27,6 @@
     ]
   },
   "scripts": {
-    "lint": "eslint .",
-    "pretest": "npm run lint",
     "test": "node ./test/runTest.js"
   },
   "devDependencies": {
@@ -35,7 +34,6 @@
     "@types/glob": "^8.0.0",
     "@types/mocha": "^10.0.0",
     "@types/node": "16.x",
-    "eslint": "^8.26.0",
     "glob": "^8.0.3",
     "mocha": "^10.1.0",
     "typescript": "^4.8.4",
